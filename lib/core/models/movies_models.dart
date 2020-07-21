@@ -13,7 +13,7 @@ class Movies {
     totalResults = json['totalResult'];
     if (json['results'] != null) {
       result = List<Result>();
-      json['result'].forEach((v) {
+      json['results'].forEach((v) {
         result.add(Result.fromJson(v));
       });
     }
